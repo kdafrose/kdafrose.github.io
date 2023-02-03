@@ -1,0 +1,157 @@
+body{ /* changing entire text font of page*/
+  font-family: Gill Sans;
+}
+
+ nav{ /* navigation */
+    display:flex;
+    justify-content: center;
+    border-top: 3px solid purple;
+    border-bottom: 1px solid #e7e7e7;
+    margin-bottom: 30px;
+  }
+
+a { /* when not hovering links, color is grey*/
+  color : #696969;
+}
+
+#active, a:hover{ /* when hovering, make text purple*/
+  color:purple;
+  
+}
+
+#Pinterest{color: purple;}/* for the interest link*/
+
+.navigation li{ /* the list for links for other pages*/
+  display:inline;
+  margin-left:10px;
+   
+}
+
+.navigation{ /* for the navigation*/
+  list-style-type:none;
+  margin:0;
+  padding:20px;
+    
+}
+  
+.navigation a{ /* the texts for the navigation*/
+  padding:20px;
+  text-decoration: none;
+}
+
+.interest_list li{
+  list-style-type: "-";
+  padding:5px;
+}
+
+.interest_list{padding:0;}
+
+div{ /* to make he two sections stick together*/
+  float:left;
+}
+
+.column1{ /*the left side of the page*/
+  width :30%;
+  text-align: center;
+  border-right: 1px solid #e7e7e7;
+  height:800px;
+  
+}
+
+#email, #resume{
+  color: purple;
+}
+
+.column2{ /*the right side of the page*/
+  width:69%;
+  height:800px;
+  
+}
+
+.right_container{ /*the text box for the right side*/
+  margin-left:30px;
+}
+
+.circle{ /*the image*/
+  height:200px;
+  width:200px;
+  overflow:hidden;
+  border-radius: 50%;
+  margin-top:30px;
+}
+
+
+#content_header{ /*add padding to the header*/
+  padding: 20px;
+}
+
+h1, h2{ /*take out the boldness of the headers*/
+  font-weight:100;
+}
+
+#footer_box{ /*for the footer*/
+  text-align:center;
+  width : 100%;
+  height:50px;
+  border-top: 1px solid #e7e7e7;
+  margin-top:30px;
+}
+
+
+.table_info dt{
+  font-weight:bold;
+  font-size:20px;
+  margin:0;
+}
+
+dd{
+  margin:0;
+  margin-top: 5px;
+  margin-bottom:30px;
+}
+
+.table_right{
+  margin-left: 50px;
+  
+}
+
+progress{
+  width:700px;
+  height:30px;
+}
+
+@media only screen and (max-width: 600px) {
+  .column1{ /*the left side of the page*/
+    width :100%;
+    height:400px;
+    border-right: 0;
+  }
+
+  .column2{ /*the right side of the page*/
+    width:100%;
+    height:400px;
+    
+  }
+
+ progress{
+    width: 400px;
+  }
+
+  .navigation li, .right_container{
+    margin-left:0;
+  }
+
+  .column1, .column2{
+    padding:10px;
+
+  }
+
+  .navigation a{
+    padding:5px;
+  }
+
+  .info_right, .Credentials{
+    width: 100%; 
+  }
+}
+
